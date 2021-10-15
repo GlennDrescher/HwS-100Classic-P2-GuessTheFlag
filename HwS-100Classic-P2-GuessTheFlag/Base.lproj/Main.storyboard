@@ -40,23 +40,41 @@
                                     <action selector="flagTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZBM-RR-uLf"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your score is 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DpT-zI-xlo">
+                                <rect key="frame" x="151" y="480" width="112.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 Answered Questions" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yad-hi-WHt">
+                                <rect key="frame" x="121.5" y="509" width="171.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="Q4l-MP-9Ga" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="54Q-Za-2tC"/>
+                            <constraint firstItem="DpT-zI-xlo" firstAttribute="centerX" secondItem="DXs-kl-bH7" secondAttribute="centerX" id="5Un-Ms-aj8"/>
                             <constraint firstItem="b1i-b2-FA9" firstAttribute="top" secondItem="Q4l-MP-9Ga" secondAttribute="bottom" constant="15" id="Hnk-lO-zjX"/>
                             <constraint firstItem="Q4l-MP-9Ga" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="12" id="SbQ-gb-2g7"/>
+                            <constraint firstItem="DpT-zI-xlo" firstAttribute="top" secondItem="DXs-kl-bH7" secondAttribute="bottom" constant="8" symbolic="YES" id="XIT-je-7kL"/>
                             <constraint firstItem="DXs-kl-bH7" firstAttribute="centerX" secondItem="b1i-b2-FA9" secondAttribute="centerX" id="Z5u-Pu-XFW"/>
+                            <constraint firstItem="Yad-hi-WHt" firstAttribute="top" secondItem="DpT-zI-xlo" secondAttribute="bottom" constant="8" symbolic="YES" id="fhh-cs-thn"/>
+                            <constraint firstItem="Yad-hi-WHt" firstAttribute="centerX" secondItem="DpT-zI-xlo" secondAttribute="centerX" id="nv4-ps-ORd"/>
                             <constraint firstItem="DXs-kl-bH7" firstAttribute="top" secondItem="b1i-b2-FA9" secondAttribute="bottom" constant="15" id="tEd-MH-FKT"/>
                             <constraint firstItem="b1i-b2-FA9" firstAttribute="centerX" secondItem="Q4l-MP-9Ga" secondAttribute="centerX" id="tsB-4d-f5h"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="dMh-dV-845"/>
                     <connections>
+                        <outlet property="answeredQuestionsLabel" destination="Yad-hi-WHt" id="Mf8-n6-ClL"/>
                         <outlet property="flag1" destination="Q4l-MP-9Ga" id="Do1-PF-P4T"/>
                         <outlet property="flag2" destination="b1i-b2-FA9" id="GSh-DL-ymo"/>
                         <outlet property="flag3" destination="DXs-kl-bH7" id="oRS-gp-I8o"/>
+                        <outlet property="scoreLabel" destination="DpT-zI-xlo" id="kjj-kz-w2S"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
